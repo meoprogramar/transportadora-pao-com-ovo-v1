@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transportadora Pão com Ovo</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+</head>
+<body>
+	<div align="center" style="font-family: Arial;">
+		<nav class="navbar navbar-dark bg-primary"
+			style="box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .3);">
+			<h4 style="color: white; margin-top: 5px;">Login</h4>
+		</nav>
+		
+		<form th:action="@{/entrar}" method="post">
+			<div class="card-group"
+				style="width: 400px; height: 370px; margin-top: 70px; box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .15); justify-content: center; border-radius: 10px">
+				<div class="form-group" style="margin-top: 50px;">
+					<label>Usuário</label> 
+					<input name="username" id="u1" class="form-control" style="text-transform:lowercase;"> 
+					<label style="margin-top: 20px;">Senha</label> 
+					<input name="password" type="password" class="form-control" style="text-transform:lowercase;">
+					<button style="margin-top: 40px; width: 100%;" type="submit"
+						class="btn btn-primary">Entrar</button>
+						
+					<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+				</div>
+			</div>
+		</form>
+		
+		<div style="width: 400px; margin-top: 10px;" class="alert alert-danger" role="alert" th:text="${mensagem}" 
+		th:if="${not #strings.isEmpty(mensagem)}">
+		</div>
+	</div>
+</body>
+</html>
