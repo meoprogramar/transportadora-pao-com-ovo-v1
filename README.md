@@ -57,12 +57,10 @@ Observação 2: Caso sua conta do google não tenha cadastrado informações de 
 </script>
 ```
 
-#
 ### Demostração
 
 ![Captura de tela de 2019-12-06 23-32-37](https://user-images.githubusercontent.com/34866806/70367790-56d77f80-1882-11ea-9774-19685a6b030f.png)
 ![Captura de tela de 2019-12-06 23-39-23](https://user-images.githubusercontent.com/34866806/70367791-56d77f80-1882-11ea-8b36-6294dfd78bab.png)
 ![Captura de tela de 2019-12-06 23-40-30](https://user-images.githubusercontent.com/34866806/70367792-56d77f80-1882-11ea-98b4-6df6ee70ee58.png)
 
-#
 ### [Versão 2 utilizando Spring Boot como API + Node.js + Vue.js](http://localhost:8080/)
